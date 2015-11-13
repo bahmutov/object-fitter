@@ -18,4 +18,14 @@ describe('object size', function () {
     la(size > 5, 'at least 5 chars', size);
   });
 
+  it('measures an empty object', function () {
+    var size = sizer({});
+    la(size === 2, 'empty object has size', size);
+  });
+
+  it('measures an empty string', function () {
+    var size = sizer('');
+    la(size === 2, 'empty object has size',
+      size, JSON.stringify(''));
+  });
 });

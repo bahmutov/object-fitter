@@ -1,3 +1,5 @@
+var sizer = require('./object-size');
+
 function objectFitter(maxSize, props, o) {
   var limit, properties, obj;
 
@@ -39,6 +41,17 @@ function objectFitter(maxSize, props, o) {
   }
 
   var result = JSON.parse(JSON.stringify(obj));
+  var size, nextPropertyIndex = 0;
+  do {
+    size = sizer(result);
+    if (size <= limit) {
+      break;
+    }
+    var propertyToRemove = properties[nextPropertyIndex];
+    delete result[propertyToRemove];
+    nextPropertyIndex += 1;
+  } while (nextPropertyIndex < properties.length);
+
   return result;
 }
 
