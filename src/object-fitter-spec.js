@@ -48,4 +48,26 @@ describe('object fitter', function () {
     la(!o.baz, 'no longer has baz', o);
   });
 
+  describe('different argument order', function () {
+    it('handles limit, properties, object', function () {
+      var o = fitter(35, unimportantProperties, testObject);
+      la(o, 'got returned object', o);
+    });
+
+    it('handles properties, limit, object', function () {
+      var o = fitter(unimportantProperties, 35, testObject);
+      la(o, 'got returned object', o);
+    });
+
+    it('handles object, properties, limit', function () {
+      var o = fitter(testObject, unimportantProperties, 35);
+      la(o, 'got returned object', o);
+    });
+
+    it('handles object, limit, properties', function () {
+      var o = fitter(testObject, 35, unimportantProperties);
+      la(o, 'got returned object', o);
+    });
+  });
+
 });
