@@ -1,17 +1,18 @@
 {
   "name": "object-fitter",
-  "version": "1.0.0",
   "description": "Trims properties from an object until it fits into given size limit",
+  "version": "0.0.0-semantic-release",
   "main": "src/object-fitter.js",
   "scripts": {
     "test": "mocha src/*-spec.js",
     "watch": "mocha src/*-spec.js --watch",
     "commit": "git-issues && commit-wizard",
-    "issues": "git-issues"
+    "issues": "git-issues",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bahmutov/object-fitter.git"
+    "url": "https://github.com/bahmutov/object-fitter.git"
   },
   "keywords": [
     "object",
@@ -48,6 +49,7 @@
     "git-issues": "1.1.0",
     "lazy-ass": "1.0.0",
     "mocha": "2.3.3",
-    "pre-git": "1.2.11"
+    "pre-git": "1.2.11",
+    "semantic-release": "^4.3.5"
   }
 }
