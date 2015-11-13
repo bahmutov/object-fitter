@@ -2,9 +2,9 @@
   "name": "object-fitter",
   "version": "1.0.0",
   "description": "Trims properties from an object until it fits into given size limit",
-  "main": "index.js",
+  "main": "src/object-fitter.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha src/*-spec.js",
     "commit": "git-issues && commit-wizard",
     "issues": "git-issues"
   },
@@ -30,7 +30,10 @@
   "config": {
     "pre-git": {
       "commit-msg": "validate-commit-msg",
-      "pre-commit": [],
+      "pre-commit": [
+        "npm test",
+        "npm version"
+      ],
       "pre-push": [],
       "post-commit": [],
       "post-merge": []
@@ -41,6 +44,7 @@
   },
   "devDependencies": {
     "git-issues": "1.1.0",
+    "mocha": "2.3.3",
     "pre-git": "1.2.11"
   }
 }
