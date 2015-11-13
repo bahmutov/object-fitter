@@ -1,0 +1,46 @@
+{
+  "name": "object-fitter",
+  "version": "1.0.0",
+  "description": "Trims properties from an object until it fits into given size limit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git-issues && commit-wizard",
+    "issues": "git-issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/object-fitter.git"
+  },
+  "keywords": [
+    "object",
+    "size",
+    "limit",
+    "trim",
+    "fit",
+    "utility",
+    "json"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/object-fitter/issues"
+  },
+  "homepage": "https://github.com/bahmutov/object-fitter#readme",
+  "config": {
+    "pre-git": {
+      "commit-msg": "validate-commit-msg",
+      "pre-commit": [],
+      "pre-push": [],
+      "post-commit": [],
+      "post-merge": []
+    }
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  },
+  "devDependencies": {
+    "git-issues": "1.1.0",
+    "pre-git": "1.2.11"
+  }
+}
