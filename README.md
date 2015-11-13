@@ -2,6 +2,11 @@
 
 > Trims properties from an object until it fits into given size limit
 
+[![NPM][object-fitter-icon] ][object-fitter-url]
+
+[![Build status][object-fitter-ci-image] ][object-fitter-ci-url]
+[![semantic-release][semantic-image] ][semantic-url]
+
 Install
 
     npm install --save object-fitter
@@ -67,3 +72,9 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
+[object-fitter-icon]: https://nodei.co/npm/object-fitter.png?downloads=true
+[object-fitter-url]: https://npmjs.org/package/object-fitter
+[object-fitter-ci-image]: https://travis-ci.org/bahmutov/object-fitter.png?branch=master
+[object-fitter-ci-url]: https://travis-ci.org/bahmutov/object-fitter
+[semantic-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-url]: https://github.com/semantic-release/semantic-release
