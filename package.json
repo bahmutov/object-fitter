@@ -5,6 +5,7 @@
   "main": "src/object-fitter.js",
   "scripts": {
     "test": "mocha src/*-spec.js",
+    "watch": "mocha src/*-spec.js --watch",
     "commit": "git-issues && commit-wizard",
     "issues": "git-issues"
   },
@@ -43,7 +44,9 @@
     "path": "node_modules/cz-conventional-changelog"
   },
   "devDependencies": {
+    "check-more-types": "2.1.2",
     "git-issues": "1.1.0",
+    "lazy-ass": "1.0.0",
     "mocha": "2.3.3",
     "pre-git": "1.2.11"
   }
