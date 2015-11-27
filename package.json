@@ -30,6 +30,9 @@
     "url": "https://github.com/bahmutov/object-fitter/issues"
   },
   "homepage": "https://github.com/bahmutov/object-fitter#readme",
+  "files": [
+    "src"
+  ],
   "config": {
     "pre-git": {
       "commit-msg": "validate-commit-msg",
