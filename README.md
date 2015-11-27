@@ -6,12 +6,13 @@
 
 [![Build status][object-fitter-ci-image] ][object-fitter-ci-url]
 [![semantic-release][semantic-image] ][semantic-url]
+[![manpm](https://img.shields.io/badge/manpm-%E2%9C%93-3399ff.svg)](https://github.com/bahmutov/manpm)
 
-Install
+## Install
 
     npm install --save object-fitter
 
-Use
+## Use
 
 ```js
 var fitter = require('object-fitter');
